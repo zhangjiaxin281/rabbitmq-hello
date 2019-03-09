@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>WebSocketServer show</title>
+</head>
+<script>
+    window.onload = function () {
+        ws = new WebSocket(window.location.origin.replace('http', 'ws') + '/WebSocketServer?userId=zs');
+
+        ws.onopen = function (evt) {
+            console.log("Connection open ...");
+        };
+
+        ws.onmessage = function (evt) {
+            console.log("Received Message: " + evt.data);
+        };
+
+        ws.onclose = function (evt) {
+            console.log("Connection closed.");
+        };
+    };
+
+</script>
+<body>
+</body>
+</html>

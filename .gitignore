@@ -1,0 +1,18 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+/.gradle/
+build
+*.log
+!/src/main/resources/public/amili_app/ext/build/
+!/src/main/resources/public/amili_app/resources/ext-6.5.3-css/build/
+/src/main/resources/public/amili_app/classic.jsonp
+/src/main/resources/public/amili_app/classic.json
+/src/main/resources/public/amili_app/build/
+mybatis-generator-config.xml
